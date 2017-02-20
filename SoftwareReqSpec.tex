@@ -62,36 +62,45 @@ Idrian  \textsc{van der Westhuizen}\\
 
 \newpage
 \section{Introduction}
-
+This section provides an outline of this Software Requirements Specification. The purpose for this document and the scope it covers is described and a definition list is provided for abbreviations.
 \subsection{Purpose}
 The purpose of the software requirements specification (SRS) document is to highlight the requirements and functionality of the NavUP system. The SRS describes the overall design of the system and its interfaces from the various interfaces and how they are linked with one another.\\
 The documents contains details of what the product must be able to do and describes the various users that will make use of the NavUP system so that appropriate use interfaces can be designed. The details about the products assumptions and its dependencies are also contained within the document along with the constraints of the system, this is to allow for a better understanding of what must be done and what can be done within the system, along with what must be tried to avoid.\\
-Further specific requirements are detailed within the document and makes mention of functional requirements and other design constraints to give a finer detail of what is expected in the NavUP system. The SRS documents is intended for the clientele that will oversee the creation of the NavUP system.\\
+Further specific requirements are detailed within the document and makes mention of functional requirements and other design constraints to give a finer detail of what is expected in the NavUP system. The SRS documents is intended for the clientèle that will oversee the creation of the NavUP system.\\
 \subsection{Scope}
-
+The 'NavUp' system will be used to navigate around the University of Pretoria Hatfield campus. The software will include a map of the campus that distinguishes between food courts, lecture halls, administrative buildings and other locations of interests.\\
+The system will allow a user to identify his current location on campus. The user will then be able to pick a destination on campus and the system will determine an ideal route and provide directions. Heatmaps will reveal congested areas and show where large numbers of students are moving in close proximity. This will allow a user to use a route that has less pedestrian traffic. Furthermore, a user will be allowed to save locations and search for destinations.\\
+The system will include game-like functionality that will award badges to users who have achieved certain distance milestones, and to those who travel to a new area for the first time. *Think up more game ideas maybe?*\\
+The software will run on any Android or iOS smartphone or tablet. The system will mainly use WiFi connectivity to determine users' locations.
 \subsection{Definitions, Acronyms and Abbreviations}
-
+SRS:	Software Specifications Requirement
+UP:		University of Pretoria
+GPS:	Global Positioning System
 \subsection{References}
- 
+Kung, D. (2014). Object-oriented software engineering. 1st ed. McGraw-Hill, p.98.
 \subsection{Overview}
 The SRS firstly gives an overall description of the NavUP system and its various interfaces. Each interface is divided into a separate subsection where further detail is given about what it must do and how it interacts with other interfaces. Afterwards the SRS makes mention of the memory constraints and operations. The requirements to the site adaptation are specified further in the SRS documentation.\\
 The SRS describes the average expected user for NavUP the system and what constraints the developers need to take into account when designing the overall system in more detail. A list of assumptions and dependencies of the user and the overall system is given that were used to design the basic functionality of the NavUP system detailed in the SRS document.\\
 Specific requirements are given for the external interface and functional requirements. The functional requirements contains smaller logical modules and how they might work. Performance requirements that describes how the NavUP system should perform and what is expected of its performance along with design constraints are given for the NavUP system. The SRS then describes the various quality attributes the system should have in order to function reliably.\\ 
 \section{Overall Description}
+In this section will give a broad overview of the entire NavUP system. The basic functionality will be explained and assumptions and constraints will be listed.
 \subsection{Product Perspective}
+The system will consist of a single mobile application that communicates with an external database. The application will display a map of the UP campus and push event so users. Different levels of users will be able to interact with the database in different ways. A guest or student will be able to only register and view the map and navigation information. An administrator will be able to add events and send push notifications to other users.\\
+The mobile application will be able to communicate with the GPS for outside navigation and will use the indoor WiFi network for navigation to specific lecture rooms indoors.
 \subsubsection{System interfaces}
 The system is going to be designed in a modular fashion, where the separate functionalities are broken up to allow for multiple programmers and designers to work on the NavUP at once. The modularity also allows for better maintenance and upgrading of future software and/or hardware by allowing the programmers to only change a smaller group of modules.\\
 The System will need to be coded in such a way that multiple types of mobile devices would be able to use the NavUP system. It must also be able to communicate with an external database/server such as ClickUP where user information can be tracked and saved for further use in other applications and functionalities.\\
 \subsubsection{User interfaces}
 The user interface should be designed for a mobile device, in other words the screen should not be cluttered with icons and make use of touch screen technologies and its gestures. The map of the Hatfield campus along with various points of interest should be clearly visible on the screen. The user interface must be unambiguous since not only students and staff will make use of the NavUP system, but visitors as well. Since visitors will make use of the system, a way to locate and find various building by name would be beneficial, not only for visitors, but perhaps first year students as well.\\
 \subsubsection{Hardware interfaces}
-The NavUP system should be able to make use of the Wi-Fi routers scattered throughout the Hatfield campus. The application itself should be able to run on a mobile device and therefore make use of phone data alongside the Wi-fi routers and make use of the built-in GPS system on most mobile devices. The NavUP application should be able to support input from touch screen devices from the user’s mobile device to communicate and request various functionalities of the system.\\
-The system should also make use of an external database to track a user’s progress for various achievement based activities. The system would also be able to use the database to direct specific help/information to the user.\\
+The NavUP system should be able to make use of the WiFi routers scattered throughout the Hatfield campus. The application itself should be able to run on a mobile device and therefore make use of phone data alongside the Wifi routers and make use of the built-in GPS system on most mobile devices. The NavUP application should be able to support input from touch screen devices from the user's mobile device to communicate and request various functionalities of the system.\\
+The system should also make use of an external database to track a user's progress for various achievement based activities. The system would also be able to use the database to direct specific help/information to the user.\\
 \subsubsection{Software interfaces}
 The various classes and modules programmed on the software of the system should be capable of receiving data from the hardware and communications functions of the system. The software should be able to calculate and update values on the internal system as well as the external database. Various classes and modules should be able to send and receive values from one another and these updated/received values should be able to communicate with the mobiles devices interface in order to update the map. The software should also be capable of updating the data of the external database.\\
 \subsubsection{Communication Interfaces}
-The mobile device used by the user should be able to communicate with the Wi-Fi routers throughout the Hatfield campus in order to update values such as coordinates on the system. The user’s mobile device should also be able to send and receive data from an external database, this data can also be used to block/allow access to certain features for instance a student must be able to participate in game like activities, but a visitor does not have to. Various mobile devices should be able to communicate with their navigation systems and other mobile devices (directly or indirectly) in order to calculate and create heat maps of high user traffic in an area on the map.\\
+The mobile device used by the user should be able to communicate with the WiFi routers throughout the Hatfield campus in order to update values such as coordinates on the system. The user’s mobile device should also be able to send and receive data from an external database, this data can also be used to block/allow access to certain features for instance a student must be able to participate in game like activities, but a visitor does not have to. Various mobile devices should be able to communicate with their navigation systems and other mobile devices (directly or indirectly) in order to calculate and create heat maps of high user traffic in an area on the map.\\
 \subsubsection{Memory}
+Because this application will be mainly mobile based, it should use as little as possible primary memory. It must in no way overload the mobile device's functional capacity. The installation size must be small, to not clutter up user space on the user's device. Application download should also preferably take place over the UP WiFi network to alleviate user data costs.
 \subsubsection{Operations}
 \subsubsection{Site Adaptation Requirements}
 \subsection{Product Functions}
