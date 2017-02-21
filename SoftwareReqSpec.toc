@@ -29,5 +29,6 @@
 \contentsline {subsection}{\numberline {3.3}Performance Requirements}{6}
 \contentsline {subsection}{\numberline {3.4}Design Constraints}{6}
 \contentsline {subsection}{\numberline {3.5}Software System Attributes}{6}
-\contentsline {subsection}{\numberline {3.6}Other Requirements}{6}
-\contentsline {section}{\numberline {4}Appendix}{6}
+\contentsline {subsection}{\numberline {3.6}Other Requirements}{8}
+\contentsline {section}{\numberline {4}Appendix}{8}
+
