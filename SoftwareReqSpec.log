@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.25)  17 FEB 2017 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.25)  21 FEB 2017 12:12
 entering extended mode
 **./SoftwareReqSpec.tex
 (SoftwareReqSpec.tex
@@ -423,57 +423,27 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `SoftwareReqSpec.toc'.
 
- [1]
-Underfull \hbox (badness 10000) in paragraph at lines 67--70
+ [1] [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--80
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-
- []
-
-[4] [5] (SoftwareReqSpec.aux) ) 
+[4] [5] [6] (SoftwareReqSpec.aux) ) 
 Here is how much of TeX's memory you used:
- 2094 strings out of 493634
- 28073 string characters out of 3141317
- 90346 words of memory out of 3000000
- 5480 multiletter control sequences out of 15000+200000
+ 2095 strings out of 493634
+ 28081 string characters out of 3141317
+ 91346 words of memory out of 3000000
+ 5481 multiletter control sequences out of 15000+200000
  12149 words of font info for 42 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,4n,19p,708b,277s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb>
-Output written on SoftwareReqSpec.pdf (6 pages, 61866 bytes).
+ 27i,4n,19p,706b,277s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr12.pfb>
+Output written on SoftwareReqSpec.pdf (7 pages, 65815 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
+ 38 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
