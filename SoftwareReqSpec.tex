@@ -11,10 +11,6 @@
 \begin{titlepage}
 \center
 
-%\textsc{\LARGE Software Requirement Specification}\\[1.5cm]
-%\textsc{\Large Project: NavUP}\\[1.5cm]
-%\textsc{\large Client: Department of Computer Science, University of Pretoria}\\[0.5cm]
-%\textsc{\large Team: Jelly}\\[0.5cm]
 
 \textsc{\LARGE Department of Computer Science} \\ [.5cm]
 \textsc{\Large Project: NavUP} \\ [.5cm]
@@ -48,10 +44,6 @@ Idrian  \textsc{van der Westhuizen}\\
 \end{flushright}
 \end{minipage}\\
 
-
-%{\large University of Pretoria, Department of Computer Science}\\
-
-%{\large 24 February 2017}\\[3cm]
 
 \vfil
 
@@ -117,7 +109,75 @@ The entire system will also make use of an external database in order to save an
 \subsection{Performance Requirements}
 \subsection{Design Constraints}
 \subsection{Software System Attributes}
+\begin{itemize}
+\item[$\bullet$]Reliability:
+	\begin{itemize}
+		\item[$\bullet$] Any information that is stored on the database must remain correct 
+		when being transferred to the user interface 
+		\item[$\bullet$] The services offered by the system should be available to users except 
+		for when the system is undergoing maintenance 
+		\item[$\bullet$] The system should reply to user requests in the shortest time interval possible 
+		\item[$\bullet$] The system must be fault tolerant,it needs to maintain a certain level of 
+		performance and offer other services that are not affected by this fault to the users 
+		\item[$\bullet$] In the event of a fault the system must be able to recover within the shortest
+		time period possible and recover any data that may have been lost.
+		\item[$\bullet$] The system should be able to respond appropriately if it receives  bad input data from the 
+		user.			 
+	\end{itemize}
+ 
+\item[$\bullet$] Scalability:
+	\begin{itemize}
+		\item[$\bullet$] The system must be able to cater for increases in the work load, 
+		for example large number of users or activities at any given time,without impacting on the 
+		performance of the system.
+		 \item[$\bullet$] If the system does not cater for increases in work load it should at least 
+		 provide the ability to be readily enlarged/ 
+	\end{itemize}
+	
+\item[$\bullet$] Maintainability:
+	\begin{itemize}
+		\item[$\bullet$] The system must be designed in a modular fashion that provides high cohesion and
+		loose coupling, the will allow parts of the system to be easily maintained without affecting the rest 
+		of the system.
+		\item[$\bullet$] Maintenance should be able to be carried out by different maintenance teams, therefore
+		the system must be easy to learn and understand.
+	\end{itemize}
+
+\item[$\bullet$] Integrability:
+	\begin{itemize}
+		\item[$\bullet$]Since we are following a modular design, components of the system that are
+		separately developed should work  correctly together.
+		\item[$\bullet$] Follow  coding standards specified by the client to allow for easy integration and employ continuous
+		integration in our design process  
+	\end{itemize}
+
+\item[$\bullet$] Usability:
+	\begin{itemize}
+		\item[$\bullet$] The system must be easy to learn.
+		\item[$\bullet$] System must cater for user mistakes,by providing the user with the undo or roll back option.
+		\item[$\bullet$] The user interface must be easy to use and intuitive. 
+		\item[$\bullet$] System should have options in a logical manner. 
+		\item[$\bullet$] Use widgets and icons that the target users may be familiar with. 
+		\item[$\bullet$] The user manual should have a detailed description of the system.
+		\item[$\bullet$] A help option must be provided to the users.
+		\item[$\bullet$] System must be designed in a way that allows the users to learn as they are utilizing 
+		 it. 
+	\end{itemize}
+
+  
+\item[$\bullet$] Interoperability:
+	\begin{itemize}
+		\item[$\bullet$]
+	\end{itemize}
+\end{itemize}
+ 
+ 
 \subsection{Other Requirements}
+	\begin{itemize} \item[$\bullet$] Low Resource Consumption \end{itemize}
+		
+		As mentioned above the NavUP will be running on mobile devices due to the small amount of resources some of these devices
+		may have, unnecessary use of resources on the front-end of the system should be avoided.
+	
 \section{Appendix}
 \newpage
 \end{document}
