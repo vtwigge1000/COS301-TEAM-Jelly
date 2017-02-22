@@ -103,43 +103,194 @@ The entire system will also make use of an external database in order to save an
 \subsection{Functional Requirements}
 \subsubsection{1-Admin system}
 \paragraph{1-1}
-The admin system will allow a designated administrator to add, remove and manage user accounts.
+The admin system will allow a designated administrator to add, remove and manage user accounts.\\
+Preconditions:
+\begin{itemize} 
+	\item[$\bullet$] Must have admin privileges
+	\item[$\bullet$] Must be registered and logged in
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] Changes made to user accounts
+\end{itemize}
 \paragraph{1-2}
-The admin system will allow a designated administrator to add, remove and manage system, activity and event notifications.
+The admin system will allow a designated administrator to add, remove and manage system, activity and event notifications.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must have admin privileges
+	\item[$\bullet$] Must be registered and logged in
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] Changes made to event notifications
+\end{itemize}
 \subsubsection{2-Account management}
 \paragraph{2-1}
-The account management system will allow a registered user (staff member and student) to login to the system.
+The account management system will allow a registered user (staff member and student) to login to the system.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must be registered
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] User logged in
+\end{itemize}
 \paragraph{2-2}
-The account management system will allow a guest user to login to the system using a guest account.
+The account management system will allow a guest user to login to the system using a guest account.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must be a visitor
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] User logged in
+\end{itemize}
 \paragraph{2-3}
-The account management system will allow a registered user (staff member and student) to view and change user details.
+The account management system will allow a registered user (staff member and student) to view and change user details.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must be registered and logged in
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] Changes made to user details
+\end{itemize}
 \paragraph{2-4}
-The account management system will allow an administrator to make a change to the account system, ie what details about users are stored.
+The account management system will allow an administrator to make a change to the account system, ie what details about users are stored.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must have admin privileges
+	\item[$\bullet$] Must be registered
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] Changes made to account management system
+\end{itemize}
 \subsubsection{3-Core-Navigation system}
 \paragraph{3-1}
-The core navigation system will allow a user to view his/her current location.
+The core navigation system will allow a user to view his/her current location.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must be registered and logged in
+	\item[$\bullet$] Must be on campus and connected to wifi network
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] User sees his/her location
+\end{itemize}
 \paragraph{3-2}
-The core navigation system will allow a user to save his/her current location details for later retrieval.
+The core navigation system will allow a user to save his/her current location details for later retrieval.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must be registered and logged in
+	\item[$\bullet$] Must be on campus and connected to wifi network
+	\item[$\bullet$] Must view current location
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] User saves his/her location
+\end{itemize}
 \paragraph{3-3}
-The core navigation system will allow a user to enter a destination and get directions. This will utilize the heat map to find and indicate an optimal route based on pedestrian congestion.
+The core navigation system will allow a user to enter a destination and get directions. This will utilize the heat map to find and indicate an optimal route based on pedestrian congestion.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must be registered and logged in
+	\item[$\bullet$] Must be on campus and connected to wifi network
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] User sees optimal route and heat map
+\end{itemize}
 \subsubsection{4-Activity management}
 \paragraph{4-1}
-The activity management system will allow a user to manage current activities.
+The activity management system will allow a user to manage current activities.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must be registered and logged in
+	\item[$\bullet$] Must be on campus and connected to wifi network
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] Changes made to activity list
+\end{itemize}
 \paragraph{4-2}
-The activity management system will allow a user to add an activity to an activity list.
+The activity management system will allow a user to add an activity to an activity list.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must be registered and logged in
+	\item[$\bullet$] Must be on campus and connected to wifi network
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] Activity added to list
+\end{itemize}
 \paragraph{4-3}
-The activity management system will allow a user to remove activities from an activity list.
+The activity management system will allow a user to remove activities from an activity list.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must be registered and logged in
+	\item[$\bullet$] Must be on campus and connected to wifi network
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] Activity removed from list
+\end{itemize}
 \paragraph{4-4}
-The activity management system will allow a user to view the heat map of current pedestrian traffic on campus.
+The activity management system will allow a user to view the heat map of current pedestrian traffic on campus.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must be registered and logged in
+	\item[$\bullet$] Must be on campus and connected to wifi network
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] User sees campus pedestrian traffic on heat map
+\end{itemize}
 \paragraph{4-5}
-The activity management system will update a user on any relevant activity information.
+The activity management system will update a user on any relevant activity information.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must be registered and logged in
+	\item[$\bullet$] Must be on campus and connected to wifi network
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] User receives notification
+\end{itemize}
 \subsubsection{5-Push-notification}
 \paragraph{5-1}
-The notification system will allow an administrator to create a notification.
+The notification system will allow an administrator to create a notification.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must be registered and logged in
+	\item[$\bullet$] Must have admin privileges
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] Notification created
+\end{itemize}
 \paragraph{5-2}
-The notification system will allow an administrator to remove a notification.
+The notification system will allow an administrator to remove a notification.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must be registered and logged in
+	\item[$\bullet$] Must have admin privileges
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] Notification removed
+\end{itemize}
 \paragraph{5-3}
-The notification system will allow an administrator to push notification to relevant users.
+The notification system will allow an administrator to push notification to relevant users.\\
+Preconditions:
+\begin{itemize}
+	\item[$\bullet$] Must be registered and logged in
+	\item[$\bullet$] Must have admin privileges
+\end{itemize}
+Postconditions:
+\begin{itemize}
+	\item[$\bullet$] Relevant users received push notification
+\end{itemize}
 \subsection{Performance Requirements}
 \subsection{Design Constraints}
 \subsection{Software System Attributes}
